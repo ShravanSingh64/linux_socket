@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 	struct sockaddr_un local, remote;
 	int len = 0;
 
-	if(argc>2)
+	if(argc!=2)
 	{
 		fprintf(stderr,"Arguments cannot be more than 1:Too Many Arguments \n");
 		return 10;
