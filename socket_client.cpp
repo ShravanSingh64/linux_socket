@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	memset(recv_msg, 0, s_recv_len*sizeof(char));
 	memset(send_msg, 0, s_send_len*sizeof(char));
 
-	if(argc>3)
+	if(argc!=3)
 	{
 		fprintf(stderr,"Arguments cannot be more than 2: Too Many Arguments \n");
 		return 10;
